@@ -1,0 +1,17 @@
+#Java
+*.class
+
+#Package FIles
+*.jar
+*.war
+*.ear
+
+#IntelliJ IDEA
+/out
+/.idea
+*.iml
+*.ipr
+*.iws
+
+#OS X
+*.DS_Store
