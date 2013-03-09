@@ -5,7 +5,12 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 
 public class MareimuDesktop {
     public static void main(String[] args) {
+        changeMacMenuBarApplicationName();
         loadLibgdxApplication();
+    }
+
+    private static void changeMacMenuBarApplicationName() {
+        System.setProperty("com.apple.mrj.application.apple.menu.about.name", OSX_APP_NAME);
     }
 
     private static void loadLibgdxApplication() {
