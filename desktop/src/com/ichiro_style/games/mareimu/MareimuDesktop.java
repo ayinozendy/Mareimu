@@ -4,6 +4,10 @@ import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 
 public class MareimuDesktop {
+
+    private static String OSX_APP_NAME = "Mareimu";
+    private static String APP_TITLE = "Mareimu Desktop";
+
     public static void main(String[] args) {
         changeMacMenuBarApplicationName();
         loadLibgdxApplication();
@@ -15,7 +19,7 @@ public class MareimuDesktop {
 
     private static void loadLibgdxApplication() {
         LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
-        cfg.title = "Mareimu Desktop";
+        cfg.title = APP_TITLE;
         cfg.useGL20 = true;
         cfg.width = 800;
         cfg.height = 480;
